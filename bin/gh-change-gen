@@ -1,0 +1,30 @@
+#!/usr/bin/env node
+
+const program = require('commander');
+const path = require('path');
+const cli = require('../lib/cli');
+const pkg = require('../package');
+
+function templatePath(val) {
+  if (val) {
+    return val;
+  }
+  return path.resolve(__dirname, '..', 'template', 'template.ejs');
+}
+
+program
+  .version(pkg.version)
+  .option('-o, --owner <owner>', 'owner of the GitHub repository')
+  .option('-r, --repo <repo>', 'name of the GitHub repository')
+  .option('-m, --milestone [milestone]', 'title of Milestone')
+  .option('-l, --labels [labels]', 'list of comma separated Label names. Example: bug,ui,@high')
+  .option('-s, --issue_status [issue_status]', 'issue status', 'closed')
+  .option('-t, --template [template]', 'path to changelog template ejs file', templatePath, templatePath())
+  .option('-f, --file [file]', 'name of the file to output the changelog to [CHANGELOG.md]', 'CHANGELOG.md')
+  .parse(process.argv);
+
+if (!process.argv.slice(2).length) {
+  program.outputHelp();
+} else {
+  cli(program);
+}
