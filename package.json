@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fossamagna/github-chnagelog-generator.git"
+    "url": "git+https://github.com/fossamagna/github-changelog-generator.git"
   },
   "keywords": [
     "github"
@@ -22,9 +22,9 @@
   "author": "fossamagna <fossamagna2@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/fossamagna/github-chnagelog-generator/issues"
+    "url": "https://github.com/fossamagna/github-changelog-generator/issues"
   },
-  "homepage": "https://github.com/fossamagna/github-chnagelog-generator#readme",
+  "homepage": "https://github.com/fossamagna/github-changelog-generator#readme",
   "dependencies": {
     "commander": "2.9.0",
     "ejs": "2.5.1",
