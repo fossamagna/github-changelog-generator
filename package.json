@@ -1,9 +1,9 @@
 {
   "name": "github-changelog-generator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Changelog generator from GitHub issues",
   "main": "lib/cli.js",
-  "bin":  {
+  "bin": {
     "gh-change-gen": "bin/gh-change-gen"
   },
   "engines": {
