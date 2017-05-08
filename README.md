@@ -1,4 +1,6 @@
 # github-changelog-generator [![NPM version][npm-image]][npm-url]
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/fossamagna/github-changelog-generator.svg)](https://greenkeeper.io/)
 > Changelog generator from GitHub issues
 
 ## Installation
