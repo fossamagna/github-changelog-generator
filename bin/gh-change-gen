@@ -14,6 +14,7 @@ function templatePath(val) {
 
 program
   .version(pkg.version)
+  .option('-n, --no_auth', 'no authenticate')
   .option('-o, --owner <owner>', 'owner of the GitHub repository')
   .option('-r, --repo <repo>', 'name of the GitHub repository')
   .option('-m, --milestone [milestone]', 'title of Milestone')
