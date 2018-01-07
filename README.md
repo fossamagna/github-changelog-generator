@@ -20,6 +20,7 @@ See `gh-change-gen --help` for detailed usage.
 
     -h, --help                         output usage information
     -V, --version                      output the version number
+    -n, --no_auth                      no authenticate
     -o, --owner <owner>                owner of the GitHub repository
     -r, --repo <repo>                  name of the GitHub repository
     -m, --milestone [milestone]        title of Milestone
